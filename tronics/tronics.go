@@ -6,7 +6,7 @@ import (
 
 var e = echo.New()
 
-func start() {
+func Start() {
 	e.GET("/products/:id", getProduct)
 	e.GET("/products", getAllProducts)
 	e.POST("/product", addProduct)
